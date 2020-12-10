@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projet Mohamed Ali</title>
+	<style type="text/css">
+		* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 320px;
+	height: 274px;
+}
+
+form {
+	width: 320px;
+	text-align: center;
+	position: relative;
+}
+
+form fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 5px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+}
+
+form input {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+
+	</style>
+</head>
+<body bgcolor='#E6E6E6'>
+	<div>
+		<h2>
+			<font face="Arial"> <center>Programmation OTA </center> </font>
+		</h2>
+		<hr>
+		<br>
+		<form  ref="uploadForm" id="uploadForm" action="/upload" method="post" encType="multipart/form-data"> 
+			<fieldset>
+				<label>File (.bin)</label>
+				<input type="file" name="path" accept=".ino"  required><br>
+				<input type="Submit" value="Upload !"><br>
+				<br>
+				
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
